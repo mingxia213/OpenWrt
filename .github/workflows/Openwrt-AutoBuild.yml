@@ -8,12 +8,9 @@
 
 name: Build OpenWrt
 
-watch:
-    types: started
-
-
 on: 
-  repository_dispatch:
+  watch:
+    types: started
 
 env:
   REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
